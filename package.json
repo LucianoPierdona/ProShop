@@ -1,5 +1,42 @@
 {
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "react-bootstrap": "^1.4.0"
-  }
+    "classnames": "^2.2.6",
+    "csstype": "^3.0.4",
+    "dom-helpers": "^5.2.0",
+    "express": "^4.17.1",
+    "invariant": "^2.2.4",
+    "js-tokens": "^4.0.0",
+    "lodash": "^4.17.20",
+    "lodash-es": "^4.17.15",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.1",
+    "react-bootstrap": "^1.4.0",
+    "react-is": "^16.13.1",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-overlays": "^4.1.1",
+    "react-transition-group": "^4.4.1",
+    "regenerator-runtime": "^0.13.7",
+    "uncontrollable": "^7.1.1",
+    "warning": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoPierdona/ProShop.git"
+  },
+  "author": "Luciano Pierdona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoPierdona/ProShop/issues"
+  },
+  "homepage": "https://github.com/LucianoPierdona/ProShop#readme"
 }
