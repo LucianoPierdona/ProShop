@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "classnames": "^2.2.6",
     "colors": "^1.4.0",
     "csstype": "^3.0.4",
