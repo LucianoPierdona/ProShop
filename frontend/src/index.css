@@ -9,3 +9,8 @@ h3 {
 .rating span {
   margin: 0.1rem;
 }
+
+*::selection {
+  background: #444;
+  color: #fff;
+}
