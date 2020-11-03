@@ -1,8 +1,8 @@
-const {
+import {
   PRODUCT_LIST_FAILED,
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
-} = require("../productConstants");
+} from "../productConstants";
 import axios from "axios";
 
 export const listProducts = () => async (dispatch) => {
