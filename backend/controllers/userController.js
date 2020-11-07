@@ -1,6 +1,6 @@
-import User from "../models/userModel.js";
 import asyncHandler from "express-async-handler";
 import generateToken from "../utils/generateToken.js";
+import User from "../models/userModel.js";
 
 // @desc Authenticate the user
 // @route POST /api/users/login
@@ -27,14 +27,12 @@ const authUser = asyncHandler(async (req, res) => {
 // @route POST /api/users/profile
 // @access Private
 const getUserProfile = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.user._id);
-
-  if (user) {
+  if (req.user) {
     res.json({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      isAdmin: user.isAdmin,
+      _id: req.user._id,
+      name: req.user.name,
+      email: req.user.email,
+      isAdmin: req.user.isAdmin,
     });
   } else {
     res.status(404);
