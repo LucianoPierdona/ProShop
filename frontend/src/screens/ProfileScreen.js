@@ -5,7 +5,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { getUserDetails, updateUserProfile } from "../actions/userActions";
 
-const ProfileScreen = ({ history }) => {
+const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,7 +35,7 @@ const ProfileScreen = ({ history }) => {
         setEmail(user.email);
       }
     }
-  }, [dispatch, userInfo, history, user]);
+  }, [dispatch, userInfo, history, user, location]);
 
   const submitHandler = (e) => {
     e.preventDefault();
