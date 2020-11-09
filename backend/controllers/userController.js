@@ -1,6 +1,7 @@
 import asyncHandler from "express-async-handler";
 import generateToken from "../utils/generateToken.js";
 import User from "../models/userModel.js";
+import jwt from "jsonwebtoken";
 
 // @desc Authenticate the user
 // @route POST /api/users/login
@@ -57,6 +58,7 @@ const registerUser = asyncHandler(async (req, res) => {
 // @access Private
 const getUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
+
   if (req.user) {
     return res.status(201).json({
       _id: user._id,
