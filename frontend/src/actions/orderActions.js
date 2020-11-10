@@ -48,19 +48,21 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
     dispatch({
       type: ORDER_DETAILS_REQUEST,
     });
-
+    console.log("aqui filha da puta");
     const {
       userLogin: { userInfo },
     } = getState();
-
+    console.log(userInfo.token);
     const config = {
       headers: {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-
+    console.log(
+      await axios.get(`/api/products/id5fa06bdfc9631d20e4a3206e`, config)
+    );
     const { data } = await axios.get(`/api/orders/${id}`, config);
-
+    console.log(data);
     dispatch({
       type: ORDER_DETAILS_SUCCESS,
       payload: data,
