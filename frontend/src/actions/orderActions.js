@@ -51,7 +51,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
     dispatch({
       type: ORDER_DETAILS_REQUEST,
     });
-    console.log("aqui filha da puta");
+
     const {
       userLogin: { userInfo },
     } = getState();
@@ -89,10 +89,11 @@ export const payOrder = (orderId, paymentResult) => async (
     dispatch({
       type: ORDER_PAY_REQUEST,
     });
-    console.log("aqui filha da puta");
+
     const {
       userLogin: { userInfo },
     } = getState();
+
     console.log(userInfo.token);
     const config = {
       headers: {
@@ -106,7 +107,7 @@ export const payOrder = (orderId, paymentResult) => async (
       paymentResult,
       config
     );
-    console.log(data);
+
     dispatch({
       type: ORDER_PAY_SUCCESS,
       payload: data,
