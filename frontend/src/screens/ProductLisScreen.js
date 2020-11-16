@@ -29,7 +29,9 @@ const ProductListScreen = ({ history, match }) => {
     }
   };
 
-  const createProductHandler = () => {};
+  const createProductHandler = () => {
+    // CREATE PRODUCT
+  };
 
   return (
     <>
