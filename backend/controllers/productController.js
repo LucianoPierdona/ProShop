@@ -64,8 +64,8 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.category = category;
     product.countInStock = countInStock;
 
-    const createdProduct = await product.save();
-    return res.status(201).json(createdProduct);
+    const updatedProduct = await product.save();
+    return res.status(201).json(updatedProduct);
   } else {
     res.status(404);
     throw new Error("Product not found");
@@ -93,4 +93,10 @@ const createProduct = asyncHandler(async (req, res) => {
   return res.status(201).json(createdProduct);
 });
 
-export { getProducts, getProductById, deleteProduct };
+export {
+  getProducts,
+  getProductById,
+  deleteProduct,
+  createProduct,
+  updateProduct,
+};
