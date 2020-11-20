@@ -140,8 +140,8 @@ export const updateProduct = (product) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.putt(
-      `/api/products${product._id}`,
+    const { data } = await axios.put(
+      `/api/products/${product._id}`,
       product,
       config
     );
