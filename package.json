@@ -20,6 +20,7 @@
     "lodash-es": "^4.17.15",
     "loose-envify": "^1.4.0",
     "mongoose": "^5.10.11",
+    "multer": "^1.4.2",
     "object-assign": "^4.1.1",
     "prop-types": "^15.7.2",
     "prop-types-extra": "^1.1.1",
