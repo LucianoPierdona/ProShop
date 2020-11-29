@@ -16,7 +16,7 @@ import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
 import ProductListScreen from "./screens/ProductLisScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
-import OrderListScreen from "./screens/orderListScreen";
+import OrderListScreen from "./screens/OrderListScreen";
 
 const App = () => {
   return (
