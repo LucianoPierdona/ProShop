@@ -47,3 +47,7 @@ h3 {
   margin: 40px;
   border-radius: 50%;
 }
+
+.carousel a {
+  margin: 0 auto;
+}
