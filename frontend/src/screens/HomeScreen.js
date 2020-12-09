@@ -6,6 +6,7 @@ import { listProducts } from "../actions/productActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import ProductCarousel from "../components/ProductCarousel";
+import { Helmet } from "react-helmet";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -19,6 +20,17 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Welcome to ProShop | Home</title>
+        <meta
+          name="description"
+          content="We sell the best products for cheap"
+        />
+        <meta
+          name="keywords"
+          content="eletronics, buy eletronics, cheap eletronics"
+        />
+      </Helmet>
       {!keyword && <ProductCarousel />}
       <h1>Latest Products</h1>
       {loading ? (
