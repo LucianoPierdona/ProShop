@@ -18,6 +18,7 @@ import {
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
+import Meta from "../components/Meta";
 
 const ProductScreen = ({ match, history }) => {
   const dispatch = useDispatch();
@@ -67,6 +68,11 @@ const ProductScreen = ({ match, history }) => {
         <Message variant="danger">{error}</Message>
       ) : (
         <>
+          <Meta
+            title={product.name}
+            description={product.description}
+            keywords={product.name}
+          />
           <Row>
             <Col md={6}>
               <Image src={product.image} alt={product.name} fluid />
