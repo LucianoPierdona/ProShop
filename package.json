@@ -26,6 +26,7 @@
     "prop-types": "^15.7.2",
     "prop-types-extra": "^1.1.1",
     "react-bootstrap": "^1.4.0",
+    "react-helmet": "^6.1.0",
     "react-is": "^16.13.1",
     "react-lifecycles-compat": "^3.0.4",
     "react-overlays": "^4.1.1",
